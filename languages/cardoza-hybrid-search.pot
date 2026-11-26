@@ -1,0 +1,510 @@
+# Copyright (C) 2026 Vinoj Cardoza
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Cardoza Hybrid Search 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cardoza-hybrid-search\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-11-25T11:53:35+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: cardoza-hybrid-search\n"
+
+#. Plugin Name of the plugin
+#: cardoza-hybrid-search.php
+#: app/src/admin/class-layout.php:103
+#: app/src/admin/class-layout.php:105
+#: app/src/hooks/class-admin-menu.php:106
+#: app/src/hooks/class-post-exclusion.php:124
+#: assets/js/editor.js:43
+msgid "Cardoza Hybrid Search"
+msgstr ""
+
+#. Description of the plugin
+#: cardoza-hybrid-search.php
+msgid "AI-powered hybrid search for WordPress: combines keyword (full-text) and semantic vector search using embeddings, with optional AI answers from an LLM. Runs on MySQL alone, so it works on shared hosting with no vector database."
+msgstr ""
+
+#. Author of the plugin
+#: cardoza-hybrid-search.php
+msgid "Vinoj Cardoza"
+msgstr ""
+
+#. Author URI of the plugin
+#: cardoza-hybrid-search.php
+msgid "https://vinojcardoza.com/"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:102
+msgid "The chat endpoint must be a valid http or https URL."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:142
+msgid "The prompt has no {results} placeholder, so the chat model will not see the search results."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:160
+msgid "How do I get started?"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:163
+#: app/src/admin/class-layout.php:71
+#: app/src/hooks/class-admin-menu.php:134
+#: app/src/hooks/class-admin-menu.php:135
+msgid "Chat"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:171
+#: app/src/admin/class-post-types-page.php:118
+#: app/src/admin/class-search-page.php:75
+#: app/src/admin/class-settings-page.php:190
+msgid "Settings saved."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:184
+msgid "Chat model"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:185
+msgid "Writes an answer from the final search results. Separate from the embedding service."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:193
+#: app/src/admin/class-settings-page.php:129
+msgid "Endpoint URL"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:194
+msgid "Required. An OpenAI-compatible Chat Completions URL (http or https), from a hosted provider or a local server such as Ollama or LM Studio."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:201
+#: app/src/admin/class-settings-page.php:137
+msgid "API key"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:202
+msgid "Optional. Sent as a Bearer token only when set."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:209
+#: app/src/admin/class-reindex-page.php:113
+#: app/src/admin/class-settings-page.php:145
+msgid "Model"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:210
+msgid "The chat model name your endpoint expects."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:221
+msgid "Answer prompt"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:222
+msgid "Instructions sent to the chat model together with the search results."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:228
+msgid "Prompt"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:230
+msgid "Placeholders:"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:231
+msgid "the visitor's search,"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:232
+msgid "the numbered search results. Clear the box to use the default."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:250
+msgid "Used for AI answers on search results."
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:252
+#: app/src/admin/class-post-types-page.php:181
+#: app/src/admin/class-search-page.php:116
+#: app/src/admin/class-settings-page.php:160
+msgid "Discard"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:253
+#: app/src/admin/class-post-types-page.php:182
+#: app/src/admin/class-search-page.php:117
+#: app/src/admin/class-settings-page.php:161
+msgid "Save changes"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:260
+msgid "Status"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:262
+#: app/src/admin/class-search-page.php:126
+msgid "Chat model configured"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:264
+msgid "Set an endpoint and model to enable AI answers"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:269
+msgid "Prompt preview"
+msgstr ""
+
+#: app/src/admin/class-chat-page.php:276
+msgid "Sample question with your latest posts as results."
+msgstr ""
+
+#: app/src/admin/class-layout.php:69
+#: app/src/admin/class-search-page.php:71
+#: app/src/hooks/class-admin-menu.php:116
+#: app/src/hooks/class-admin-menu.php:117
+msgid "Search"
+msgstr ""
+
+#: app/src/admin/class-layout.php:70
+#: app/src/admin/class-settings-page.php:108
+#: app/src/hooks/class-admin-menu.php:125
+#: app/src/hooks/class-admin-menu.php:126
+#: app/src/hooks/class-admin-menu.php:207
+msgid "Settings"
+msgstr ""
+
+#: app/src/admin/class-layout.php:72
+#: app/src/admin/class-post-types-page.php:114
+#: app/src/hooks/class-admin-menu.php:143
+#: app/src/hooks/class-admin-menu.php:144
+msgid "Post Types"
+msgstr ""
+
+#: app/src/admin/class-layout.php:73
+#: app/src/admin/class-reindex-page.php:46
+#: app/src/hooks/class-admin-menu.php:152
+#: app/src/hooks/class-admin-menu.php:153
+msgid "Re-Index"
+msgstr ""
+
+#: app/src/admin/class-layout.php:116
+msgid "Embedding service configured"
+msgstr ""
+
+#: app/src/admin/class-layout.php:118
+msgid "Embedding endpoint not set"
+msgstr ""
+
+#. translators: %s: human-readable time difference, e.g. "5 mins".
+#: app/src/admin/class-layout.php:188
+msgid "%s ago"
+msgstr ""
+
+#. translators: %s: comma-separated post type names.
+#: app/src/admin/class-post-types-page.php:79
+msgid "Settings saved. Run a re-index to add existing content of: %s."
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:131
+msgid "Indexed post types"
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:132
+msgid "Only published content of the types switched on here is indexed and searchable."
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:147
+msgid "Default"
+msgstr ""
+
+#. translators: %s: number of published posts.
+#: app/src/admin/class-post-types-page.php:156
+msgid "%s published"
+msgid_plural "%s published"
+msgstr[0] ""
+msgstr[1] ""
+
+#: app/src/admin/class-post-types-page.php:179
+msgid "Switching a type off removes its posts from the index right away."
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:189
+msgid "How it works"
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:190
+msgid "Posts and pages are on by default. Other public post types are optional."
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:191
+msgid "Turning a type on indexes its posts as they are saved. To add existing ones now, run a re-index."
+msgstr ""
+
+#: app/src/admin/class-post-types-page.php:193
+msgid "Go to Re-Index →"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:49
+msgid "Re-index started. You can leave this page; it continues in the background."
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:53
+msgid "Set the embedding endpoint URL before re-indexing."
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:54
+msgid "Go to Settings"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:71
+msgid "Indexing"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:72
+msgid "Re-embed every published post and page. Runs in the background in batches."
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:87
+#: app/src/admin/class-reindex-page.php:89
+msgid "Re-index all posts"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:89
+msgid "Re-indexing…"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:98
+msgid "Index"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:101
+msgid "Posts indexed"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:105
+msgid "Chunks"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:109
+msgid "Last indexed"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:117
+msgid "Dimensions"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:144
+msgid "Running"
+msgstr ""
+
+#. translators: 1: posts processed, 2: total posts.
+#: app/src/admin/class-reindex-page.php:147
+msgid "%1$s of %2$s posts processed"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:154
+msgid "Finished with errors"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:154
+msgid "Finished"
+msgstr ""
+
+#. translators: 1: posts processed, 2: time difference, e.g. "5 mins".
+#: app/src/admin/class-reindex-page.php:158
+msgid "%1$s posts processed %2$s ago"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:165
+msgid "Not run yet"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:166
+msgid "Posts are indexed automatically when saved. Re-index to process all existing content."
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:170
+msgid "Indexed"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:171
+msgid "Removed"
+msgstr ""
+
+#: app/src/admin/class-reindex-page.php:172
+msgid "Failed"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:88
+msgid "Search on your site"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:89
+msgid "How visitors see Cardoza Hybrid Search."
+msgstr ""
+
+#: app/src/admin/class-search-page.php:96
+msgid "Use Cardoza Hybrid Search for site search"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:97
+msgid "Your theme's search box and results page use keyword + semantic ranking. If nothing matches, WordPress's own search is used."
+msgstr ""
+
+#: app/src/admin/class-search-page.php:103
+msgid "Show an AI answer above search results"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:105
+msgid "Adds the AI Answer box automatically. Turn this off if you place the [cardoza_hs_answer] shortcode yourself."
+msgstr ""
+
+#: app/src/admin/class-search-page.php:106
+msgid "Needs a chat model: set it up on the Chat page first."
+msgstr ""
+
+#: app/src/admin/class-search-page.php:114
+msgid "Changes apply to the next search."
+msgstr ""
+
+#: app/src/admin/class-search-page.php:124
+msgid "AI answers"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:128
+msgid "No chat model yet"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:130
+msgid "Set up a chat model →"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:136
+msgid "Place it yourself"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:137
+msgid "Instead of the automatic answer box, add this shortcode where you want the answer to appear on search results:"
+msgstr ""
+
+#: app/src/admin/class-search-page.php:139
+msgid "Works in classic theme templates and widgets, and in a Shortcode block in a block theme's Search Results template."
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:89
+msgid "The endpoint must be a valid http or https URL."
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:120
+msgid "Embedding service"
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:121
+msgid "Where post content is sent to be turned into vectors."
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:130
+msgid "Required. An http or https URL that accepts a batch of texts and returns one vector per text."
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:138
+msgid "Optional. Sent as a Bearer token only when set. Leave empty for services without authentication."
+msgstr ""
+
+#. translators: %d: number of dimensions.
+#: app/src/admin/class-settings-page.php:148
+msgid "Must produce %d-dimension vectors. Changing it re-embeds each post on its next index run."
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:158
+msgid "Changes apply to the next indexing run."
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:168
+msgid "Request format"
+msgstr ""
+
+#: app/src/admin/class-settings-page.php:171
+msgid "OpenAI-compatible embeddings format (OpenAI, OpenRouter, Ollama, LM Studio). Up to 16 texts per request, one vector per text."
+msgstr ""
+
+#: app/src/hooks/class-admin-menu.php:107
+msgid "Hybrid Search"
+msgstr ""
+
+#: app/src/hooks/class-answer-box.php:109
+msgid "The AI answer is not available right now."
+msgstr ""
+
+#: app/src/hooks/class-answer-box.php:110
+msgid "Too many requests. Please wait a moment and search again."
+msgstr ""
+
+#: app/src/hooks/class-answer-box.php:115
+msgid "AI answer"
+msgstr ""
+
+#: app/src/hooks/class-answer-box.php:116
+msgid "AI-generated, check the sources"
+msgstr ""
+
+#: app/src/hooks/class-answer-box.php:120
+msgid "Writing an answer…"
+msgstr ""
+
+#: app/src/hooks/class-answer-box.php:128
+msgid "Sources"
+msgstr ""
+
+#: app/src/hooks/class-post-exclusion.php:80
+msgid "Exclude this post from AI search."
+msgstr ""
+
+#: app/src/hooks/class-post-exclusion.php:144
+#: assets/js/editor.js:48
+msgid "Exclude from AI search"
+msgstr ""
+
+#: app/src/hooks/class-post-exclusion.php:146
+#: assets/js/editor.js:50
+msgid "This post will not be indexed or returned in AI search results."
+msgstr ""
+
+#: app/src/hooks/class-reindexing.php:55
+msgid "You are not allowed to do this."
+msgstr ""
+
+#: app/src/hooks/class-rest-api.php:81
+msgid "Search text."
+msgstr ""
+
+#: app/src/hooks/class-rest-api.php:98
+msgid "Maximum number of results."
+msgstr ""
+
+#. translators: %d: minimum number of characters.
+#: app/src/hooks/class-rest-api.php:131
+msgid "Enter at least %d characters."
+msgstr ""
+
+#: app/src/hooks/class-rest-api.php:174
+msgid "AI answers are not available."
+msgstr ""
+
+#: app/src/hooks/class-rest-api.php:230
+msgid "The AI answer could not be generated. Please try again later."
+msgstr ""
+
+#: app/src/hooks/class-rest-api.php:266
+msgid "Too many requests. Please wait a moment and try again."
+msgstr ""
+
+#: assets/js/editor.js:51
+msgid "This post is indexed when published."
+msgstr ""

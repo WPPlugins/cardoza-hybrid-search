@@ -1,0 +1,105 @@
+/**
+ * AI answer box — front end ([cardoza_hs_answer] and search results auto-insert).
+ *
+ * Inherits the theme's fonts and colours; only spacing, a subtle frame and
+ * the loading indicator are set here.
+ */
+
+.cardoza-hs-answer {
+	margin: 0 0 1.5em;
+	padding: 1em 1.25em;
+	border: 1px solid rgba(127, 127, 127, 0.3);
+	border-radius: 6px;
+	background: rgba(127, 127, 127, 0.06);
+}
+
+.cardoza-hs-answer[hidden],
+.cardoza-hs-answer [hidden] {
+	display: none;
+}
+
+.cardoza-hs-answer__label {
+	margin: 0 0 0.6em;
+	font-size: 0.8em;
+	font-weight: 600;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	opacity: 0.75;
+}
+
+.cardoza-hs-answer__label span {
+	font-weight: 400;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.cardoza-hs-answer__loading {
+	display: flex;
+	align-items: center;
+	gap: 0.6em;
+	opacity: 0.8;
+}
+
+.cardoza-hs-answer__loading::before {
+	content: "";
+	width: 0.9em;
+	height: 0.9em;
+	border: 2px solid currentColor;
+	border-right-color: transparent;
+	border-radius: 50%;
+	animation: cardoza-hs-spin 0.8s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.cardoza-hs-answer__loading::before {
+		animation: none;
+	}
+}
+
+@keyframes cardoza-hs-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.cardoza-hs-answer__body > :first-child {
+	margin-top: 0;
+}
+
+.cardoza-hs-answer__body > :last-child {
+	margin-bottom: 0;
+}
+
+.cardoza-hs-answer__body p,
+.cardoza-hs-answer__body ul,
+.cardoza-hs-answer__body ol {
+	margin: 0 0 0.75em;
+}
+
+.cardoza-hs-answer__body ul,
+.cardoza-hs-answer__body ol {
+	padding-left: 1.4em;
+}
+
+.cardoza-hs-answer .cardoza-hs-cite {
+	text-decoration: none;
+	font-size: 0.85em;
+	font-weight: 600;
+}
+
+.cardoza-hs-answer__sources-title {
+	margin: 1em 0 0.3em;
+	font-size: 0.85em;
+	font-weight: 600;
+}
+
+.cardoza-hs-answer__sources ol {
+	margin: 0;
+	padding-left: 1.4em;
+	font-size: 0.9em;
+}
+
+.cardoza-hs-answer__message {
+	margin: 0;
+	opacity: 0.8;
+}
