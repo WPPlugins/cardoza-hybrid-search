@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Cardoza Hybrid Search
+ * Plugin Name:       Cardoza AI-Powered Hybrid Search
  * Description:       AI-powered hybrid search for WordPress: combines keyword (full-text) and semantic vector search using embeddings, with optional AI answers from an LLM. Runs on MySQL alone, so it works on shared hosting with no vector database.
  * Version:           1.0.0
  * Requires at least: 7.0
